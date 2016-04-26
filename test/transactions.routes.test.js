@@ -5,12 +5,10 @@ const _ = require('lodash');
 const app = require('../index');
 const async = require('async');
 const sinon = require('sinon');
-const jwt = require('jsonwebtoken');
 const expect = require('chai').expect;
 const request = require('supertest');
 const config = require('config');
 const utils = require('../test/utils.js')();
-const createTransaction = require('../server/controllers/transactions')(app)._create;
 
 /**
  * Variables.
@@ -159,6 +157,7 @@ describe('transactions.routes.test.js', () => {
   /**
    * Create.
    */
+  // TODO remove #postmigration, replaced by expenses.routes.test.js
   describe('#create', () => {
 
     it('fails creating a transaction if no authenticated', (done) => {
@@ -858,6 +857,7 @@ describe('transactions.routes.test.js', () => {
   /**
    * Approve.
    */
+  // TODO remove #postmigration, replaced by expenses.routes.test.js
   describe('#approve', () => {
 
     var transaction;

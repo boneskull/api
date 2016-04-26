@@ -43,6 +43,7 @@
     "pg-hstore": "2.3.2",
     "querystring": "0.2.0",
     "request-as-curl": "0.1.0",
+    "request-promise": "^3.0.0",
     "sequelize": "2.0.4",
     "sequelize-cli": "1.9.2",
     "slug": "0.9.1",
@@ -63,7 +64,8 @@
     "nock": "2.18.2",
     "sequelize-cli": "1.9.2",
     "sinon": "1.10.3",
-    "supertest": "1.2.0"
+    "supertest": "1.2.0",
+    "supertest-as-promised": "3.1.0"
   },
   "scripts": {
     "start": "node .",

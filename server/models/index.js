@@ -80,6 +80,7 @@ function setupModels(client) {
 
   m.Activity.belongsTo(m.Transaction);
   m.Activity.belongsTo(m.Expense);
+  // TODO shouldn't there also be a donation-activity relation?
 
   // Notification.
   m.User.hasMany(m.Notification);
@@ -114,7 +115,7 @@ function setupModels(client) {
   m.Donation.belongsTo(m.Subscription);
 
   // Expense
-  // m.Transaction.belongsTo(m.Expense); // add ExpenseId to Transaction
+  // TODO m.Transaction.belongsTo(m.Expense); // add ExpenseId to Transaction
   m.Expense.belongsTo(m.User); // add UserId to Expense
   m.Expense.belongsTo(m.Group);
 
